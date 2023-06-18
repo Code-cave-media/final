@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form</title>
+		<!--Google Font-->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<!--Stylesheet-->
+		<link rel="stylesheet" href="css/form.css" />
+		<link rel="icon"  href="image/fav.png">
+		  
+		<meta name="description" content="We provides a centralized collaborative framework for delivery of services to citizens through CSCs"/>
+		<meta name="keywords" content="csc, kurumathur, kannur, csc kurumathur, jan seva kendra"/>
+		<meta name="author" content="Shravan Narayan"/>
+	</head>
+	<body>
+		<div class="container">
+			<h1>GET IN TOUCH</h1>
+			<p>Have any questions or suggestions? Drop us a message</p>
+			<form
+				method="post"
+				id="submit-form"
+				name="product"
+				id="product"
+				action=""
+			>
+				<div class="row">
+					<div class="column">
+						<label for="name">Name</label>
+						<input
+							type="text"
+							id="name"
+							name="Name"
+							placeholder="Your name here"
+						/>
+					</div>
+					<div class="column">
+						<label for="email">Email (Optional)</label>
+						<input
+							type="email"
+							name="Email"
+							id="email"
+							placeholder="Your email here"
+						/>
+					</div>
+				</div>
+				<div class="row" id="sel">
+					<div class="column">
+						<label id="pro" for="product">Product</label>
+						<select id="products" name="Products">
+							<option value="Tata">Tata</option>
+							<option value="Renault">Renault</option>
+							<option value="Royal Enfield">Royal Enfield</option>
+							<option value="Mahindra">Mahindra</option>
+							<option value="Mahindra Electric Auto">
+								Mahindra Electric Auto
+							</option>
+							<option value="Hero">Hero</option>
+						</select>
+					</div>
+
+					<div class="column">
+						<label for="contact">Contact Number</label>
+						<input
+							name="Contact"
+							type="tel"
+							id="contact"
+							placeholder="Your phone number here"
+							required
+						/>
+					</div>
+				</div>
+				<div class="row" id="mes">
+					<div class="column">
+						<label for="issue" name="message"
+							>Address </label
+						>
+						<textarea
+							id="issue"
+							placeholder="Enter Your Address"
+							name="Address"
+							rows="3"
+							required
+						></textarea>
+					</div>
+				</div>
+
+				<input type="submit" value="Submit" id="submit" />
+			</form>
+		</div>
+		<script>
+			const scriptURL =
+				"https://script.google.com/macros/s/AKfycbzo5w5WEnA0Op-Vxw-Hd_6nGmkTvDdpuNMwdysGokoFltUbiHoNzgaAGZu0k3LMX4CR/exec";
+			const from = document.forms["product"];
+
+			from.addEventListener("submit", (e) => {
+				e.preventDefault();
+				fetch(scriptURL, { method: "POST", body: new FormData(from) })
+					.then((responce) => {
+						alert("Thank you! your form is sumitted successfully");
+						window.location.href = "index.html";
+					})
+					.catch((error) => {
+						console.log(error);
+					});
+			});
+		</script>
+	</body>
+</html>

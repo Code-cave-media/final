@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/Header.css">
+    <link rel="icon"  href="image/fav.png">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+      
+    <meta name="description" content="We provides a centralized collaborative framework for delivery of services to citizens through CSCs"/>
+    <meta name="keywords" content="csc, kurumathur, kannur, csc kurumathur, jan seva kendra"/>
+    <meta name="author" content="Shravan Narayan"/>
+    <title>CSC Kurumathur</title>
+</head>
+<body>
+    <div class="loader"></div>
+
+
+<script>
+  window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader--hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
+
+</script>
+
+
+    <header id="t">
+        <div class="header-left">
+            <div class="logo">
+                <a href="index.html"><img src="image/Untitled-1.png" alt=""></a>
+            </div>
+            
+        </div>
+        <nav>
+          <ul>
+              <li>
+                  <a href="index.html" >Home</a>
+              </li>
+              <li>
+                  <a href="" class="active">Vehicle Booking</a>
+              </li>
+           
+              <li>
+                  <a href="#foot">About</a>
+              </li>
+              
+          </ul>
+          <div class="login-signup">
+              <a href="#foot">Contact Us</a>
+          </div>
+      </nav>
+        <div class="header-right">
+            <div class="login-signup">
+                <a href="#foot">Contact Us</a>
+            </div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        nav = document.querySelector("nav");
+        hamburger.onclick = function() {
+            nav.classList.toggle("active");
+        }
+    </script>
+
+<section class="slider">
+    <div class="owl-carousel owl-theme">
+        <div class="slide slide-1">
+            <div class="slide-content">
+               <img src="image/slider/bg-2.jpg" alt="">
+            </div>
+        </div>
+        <div class="slide slide-2">
+            <div class="slide-content">
+                <img src="image/slider/bg-1.jpg" alt="">
+            </div>
+        </div>
+        <div class="slide slide-3">
+            <div class="slide-content">
+                <img src="image/slider/3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Custom Javascript -->
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items:1,
+                loop:true,
+                nav:true,
+                dots:true,
+                autoplay:true,
+                autoplaySpeed:300,
+                smartSpeed:1500,
+                autoplayHoverPause:true
+            });
+        });
+    </script>
+</section>
+
+    <section class="comp">
+        <h1 class="head">Grameen eStore</h1>
+    <ul>
+        <li>
+            <div class="img">
+                <img src="products/mahindra.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1>Mahindra</h1>
+                <p>Book your Mahindra</p>
+                <a href="form.html" target="blank">
+                    <button class="btn" > Book Now
+                    </button>
+                </a>
+            </div>  
+        </li>
+        <li>
+            <div class="img">
+                <img src="products/royal enfield.jpg" alt="">
+            </div>     
+            <div class="content">
+                <h1>Royal enfield</h1>
+                <p>Book your Royal enfield</p>
+                <a href="form.html" target="blank">
+                    <button class="btn" > Book Now
+                    </button>
+                </a>
+            </div>           
+        </li>
+        <li>
+             <div class="img">
+                <img src="products/hero.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1>Hero</h1>
+                <p>Book your Hero</p>
+                <a href="form.html" target="blank">
+                    <button class="btn" > Book Now
+                    </button>
+                </a>
+            </div>  
+        </li>
+        <li>
+             <div class="img">
+                <img src="products/renault.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1>Renault</h1>
+                <p>Book your renault</p>
+                <a href="form.html" target="blank">
+                    <button class="btn" > Book Now
+                    </button>
+                </a>
+            </div>  
+        </li>
+
+        <li>
+             <div class="img">
+                <img src="products/motovolte.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1>Electric Auto</h1>
+                <p>Book your electric auto</p>
+                <a href="form.html" target="blank">
+                    <button class="btn" > Book Now
+                    </button>
+                </a>
+            </div>  
+        </li>
+        <li>
+            <div class="img">
+               <img src="products/tata.jpg" alt="">
+           </div>
+           <div class="content">
+               <h1>Tata</h1>
+               <p>Book your Tata</p>
+               <a href="form.html" target="blank">
+                   <button class="btn" > Book Now
+                   </button>
+               </a>
+           </div>  
+       </li>
+    </ul>
+    </section>
+    <footer>
+
+<footer id="foot">
+    <ul class="main">
+        
+        
+        <li class="first" id="sub">
+
+
+
+
+                <div class="footlogo" >
+                    <a href="index.html"><img src="image/Untitled-1.png" alt=""></a>
+                </div>
+
+            <h5>CSC Kurumathur</h5>
+                <ul>
+                    <li>
+                    <a href="index.html">home</a>
+                    </li>
+                    <li>|</li>
+                    <li>
+                        <a href="#t">vehicle booking</a>
+                    </li>
+                    <li>|</li>
+              
+       
+                    <li>
+                        <a href="">about</a>
+                    </li>
+                 </ul>
+
+
+
+
+
+
+        </li>
+        
+        
+        <li class="second" id="sub">
+
+
+
+
+                <h3>Contact us</h3>
+                <ul class="s">
+                    <li>
+                        <div class="contact"><img src="image/get-logo-whatsapp-png-pictures-1.png"   alt=""></div>
+                        <a href="https://wa.me/+919446697103" target="blank"><h6>whatsapp</h6></a> 
+                    </li>
+                </ul>
+       
+
+    
+
+                <ul class="t">
+                    <li>
+                   
+                        <div class="contact"><img src="image/download (2).png" alt="" id="s"></div>
+                        <a href="tel:+919496717949"><h6>Phone</h6></a> 
+                    </li>
+
+                </ul>
+                <ul class="f">
+                    <li>
+                        <div class="contact"><img src="image/images.png" alt=""></div>
+                       <a href="mailto:csckurumathur@gmail.com"><h6>Email</h6></a> 
+                    </li>
+                </ul>
+                
+
+               
+
+    
+            
+
+
+        </li>
+        <li class="third" id="sub">
+                    <h2>About our Company</h2>
+
+
+                    <p>
+                        Common Services Centers (CSC) are one of the crucial enablers of the Digital India Programme. They are the access points for delivery of various e-governance and business services to citizens in rural and remote areas of the country.
+                        CSC E-Governance Services India Limited
+                        Ministry of <br> Electronics & Information Technology
+                        Government of India</p>
+  
+            
+   
+        </li>
+    
+</footer>
+<div class="foot">
+    <p>© All rights reserved | Designed and developed by Code Cave Media</p>
+</div>
+
+</body>
+</html>
